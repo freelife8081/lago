@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NUUR Airdrop Checker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f8f9fa;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+    textarea {
+      height: 250px;
+    }
+    #status {
+      margin: 10px 0;
+      color: green;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <h2>NUUR Airdrop Eligibility Checker</h2>
+  <input type="text" id="tokenInput" placeholder="Enter Token Contract Address (0x...)" />
+  <button onclick="checkAirdrop()">Check Eligibility</button>
+  <div id="status"></div>
+  <textarea id="output" readonly></textarea>
+  <button onclick="copyResults()">Copy Results</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

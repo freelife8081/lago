@@ -1,5 +1,5 @@
 const SIDRA_RPC = "https://node.sidrachain.com";
-const GRAPHQL_ENDPOINT = "https://ledger.sidrachain.com/graphql";
+const GRAPHQL_ENDPOINT = "https://corsproxy.io/?https://ledger.sidrachain.com/graphql";
 const AIRDROP_RULES = [
   { min: 200_000, max: 500_000, airdrop: 15000 },
   { min: 501_000, max: 999_000, airdrop: 30000 },
